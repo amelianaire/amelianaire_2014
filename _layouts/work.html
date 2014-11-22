@@ -5,11 +5,11 @@ layout: default
             {{content}}
 
             {% if page.prev_section != null %}
-                <a class="previous" href="/work/{{page.prev_section}}"><svg xmlns="http://www.w3.org/2000/svg" width="16.264" height="28.285" viewBox="0 0 16.264 28.285"><path d="M16.264 2.122l-2.121-2.122-14.143 14.143 14.143 14.142 2.121-2.122-12.021-12.02z"/></svg><span>Last</span></a>
+                <a class="previous" href="{{site.baseurl}}/work/{{page.prev_section}}"><svg xmlns="http://www.w3.org/2000/svg" width="16.264" height="28.285" viewBox="0 0 16.264 28.285"><path d="M16.264 2.122l-2.121-2.122-14.143 14.143 14.143 14.142 2.121-2.122-12.021-12.02z"/></svg><span>Last</span></a>
             {% endif %}
 
             {% if page.next_section != null %}
-                <a class="next" href="/work/{{page.next_section}}"><svg xmlns="http://www.w3.org/2000/svg" width="16.264" height="28.285" viewBox="0 0 16.264 28.285"><path d="M0 26.163l2.121 2.122 14.143-14.142-14.143-14.143-2.121 2.122 12.021 12.021z"/></svg><span>Next</span></a>
+                <a class="next" href="{{site.baseurl}}/work/{{page.next_section}}"><svg xmlns="http://www.w3.org/2000/svg" width="16.264" height="28.285" viewBox="0 0 16.264 28.285"><path d="M0 26.163l2.121 2.122 14.143-14.142-14.143-14.143-2.121 2.122 12.021 12.021z"/></svg><span>Next</span></a>
             {% endif %}
 
             <div class="content-wrapper teal clearfix" id="work-footer">
