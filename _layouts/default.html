@@ -6,17 +6,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Amelia Johnson - {{ page.title }}</title>
+        <title>{{ page.title }}</title>
         <meta name="description" content="Visual designer with seven years of experience crafting effective, polished solutions for web and print.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/fonts.css">
-        <link rel="stylesheet" href="/css/gridpak.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/fonts.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/gridpak.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+        <script src="{{site.baseurl}}/js/vendor/modernizr-2.6.2.min.js"></script>
 
         <script src="//use.typekit.net/bxe3ppa.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
@@ -28,8 +28,8 @@
 
         <div id="menu" class="modal">
             <nav>
-                <a href="/">Work</a>
-                <a href="/about/">About</a>
+                <a href="{{site.baseurl}}/">Work</a>
+                <a href="{{site.baseurl}}/about/">About</a>
                 <a href="mailto:hello@amelianaire.com">Contact</a>
             </nav>
         </div>
@@ -38,7 +38,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col span_6">
-                        <h1 id="logo"><a href="/">Amelia Johnson</a></h1>
+                        <h1 id="logo"><a href="{{site.baseurl}}/">Amelia Johnson</a></h1>
 
                         <div id="menu-button">
                             <div class="menu-bar-one"></div>
@@ -58,17 +58,17 @@
 
         <footer>
             <nav>
-                <a href="/about/">About</a> <span class="bullet">&bull;</span>
-                <a href="/">Work</a> <span class="bullet">&bull;</span>
+                <a href="{{site.baseurl}}/about/">About</a> <span class="bullet">&bull;</span>
+                <a href="{{site.baseurl}}/">Work</a> <span class="bullet">&bull;</span>
                 <a href="https://twitter.com/iamamelianaire">Twitter</a> <span class="bullet">&bull;</span>
                 <a href="http://instagram.com/iamamelianaire">Photos of My Dog</a> (a.k.a Instagram) 
             </nav>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="{{site.baseurl}}/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="{{site.baseurl}}/js/plugins.js"></script>
+        <script src="{{site.baseurl}}/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

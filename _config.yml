@@ -5,8 +5,8 @@ exclude: ['README.md']
 google_analytics_id: UA-18026229-3
 
 collections:
-- work
-
+  work:
+    output: true
 
 defaults:
   -
