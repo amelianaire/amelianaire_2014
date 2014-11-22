@@ -1,0 +1,954 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #544379;
+}
+
+h1 {
+    font-family: "franklin-gothic-urw-comp-1","franklin-gothic-urw-comp-2", sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+h2 {
+    font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #a1a1a1;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #544379;
+    border-bottom: 2px solid #544379;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #544379;
+}
+
+img {
+    max-width: 100%;
+    /*max-height: 800px;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.content ul.bullets {
+    list-style: disc outside none;
+    margin-left: 20px;
+    font-family: 'calendas_plus', serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.content ul.bullets li {
+    margin-bottom: .5em;
+}
+
+body {
+    font-family: 'calendas_plus', serif;
+    background-color: #fff;
+    color: #444;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    font-size: 20px;
+}
+
+.tagline {
+    font-family: 'calendas_plus', serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+#page-wrapper {
+    margin: 0 2%;
+}
+
+.button-wrap {
+    display: inline-block;
+}
+
+.button {
+    font-size: 16px;
+    font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #f7db1f;
+    color: #544379;
+    text-transform: uppercase;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom-width: 0;
+    -webkit-transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);    
+    transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button:hover {
+    color: #fff;
+    border-bottom: 50px solid #544379;
+}
+
+@-moz-document url-prefix() { 
+    .button:hover {
+        color: #fff;
+        background-color: #544379;
+        border: none;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/* ===========
+   HEADER
+   =========== */
+
+#page-header {
+    margin: 0 2%;
+}
+
+#page-header .col {
+    position: relative;
+}
+
+#page-header .content {
+    padding: 0 15px;
+}
+
+#logo {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#logo a {
+    border: none;
+    color: #71c3b8;
+}
+
+#logo a:hover {
+    color: #e4cc2e;
+}
+
+.loading #loader {
+    max-height: 50px;
+}
+
+#work-label {
+    margin-bottom: 20px;
+}
+
+/* ===========
+   MENU
+   =========== */
+
+#menu {
+    background-color: rgba(209,182,11,0.9);
+}
+
+#menu nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#menu nav a {
+    display: block;
+    /*font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;*/
+    font-family: "franklin-gothic-urw-comp-1","franklin-gothic-urw-comp-2", sans-serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    color: #544379;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+#menu nav a:hover {
+    color: #544379;
+}
+
+#menu-button-wrapper {
+    position: relative;
+}
+
+#menu-button {
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: -12px;
+    z-index: 101;
+    padding: 10px 12px;
+
+}
+
+#menu-button div {
+    width: 100%;
+    height: 3px;
+    background: #544379;
+    margin: 3px auto;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#menu-button.on .menu-bar-one {
+    -ms-transform: rotate(45deg) translate(4px, 4px);
+    -webkit-transform: rotate(45deg) translate(4px, 4px);
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+#menu-button.on .menu-bar-two {
+    opacity: 0;
+}
+
+#menu-button.on .menu-bar-three {
+    -ms-transform: rotate(-45deg) translate(4px, -5px);
+    -webkit-transform: rotate(-45deg) translate(4px, -5px);
+    transform: rotate(-45deg) translate(4px, -5px);
+}
+
+/* ===========
+   MODAL
+   =========== */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    visibility: hidden;
+}
+
+.modal-on .modal {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.modal-on {
+    overflow: hidden;
+}
+
+/* ===========
+   CONTENT
+   =========== */
+
+.content-wrapper {
+    background-color: #f1f1f1;
+    background-size: 27px 14px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 30px 15px 15px 15px;
+    clear: both;
+}
+
+.content-wrapper .col {
+    margin-bottom: 15px;
+}
+
+.content-wrapper article .col {
+    margin-bottom: 30px;
+}
+
+.content-wrapper .col.empty {
+    margin-bottom: 1px;
+}
+
+.content-wrapper.teal {
+    background-color: #71c3b8;
+}
+
+.content-wrapper.white {
+    background-color: #fff;
+}
+
+.content-wrapper.teal h1, 
+.content-wrapper.teal h2, 
+.content-wrapper.teal h3, 
+.content-wrapper.teal h4 {
+    color: #fff;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content ul {
+    font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+#loop {
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.loop-item {
+    font-weight: 700;
+    display: none;
+}
+
+.loop-item.on {
+    display: inline-block;
+    opacity: 1;
+}
+
+.previous, .next {
+    display: block;
+    height: 70px; 
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: none;
+    fill: #e4cc2e;
+    color: #e4cc2e;
+    width: 50%;
+    padding: 10px 15px;
+}
+
+.previous span, .next span {
+    display: block;
+    line-height: 50px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-family: "franklin-gothic-urw-comp-1","franklin-gothic-urw-comp-2", sans-serif;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.previous svg, .next svg {
+    margin-top: 11px;
+}
+
+.previous:hover, .next:hover {
+    border-bottom: none;
+    fill: #544379;
+    color: #544379;
+}
+
+.previous * {
+    float: left;
+}
+
+.next * {
+    float: right;
+}
+
+.previous {
+    border-right: 1px solid #f1f1f1;
+    float: left;
+}
+
+.next {
+    border-left: 1px solid #f1f1f1;
+    float: right;
+}
+
+#work-footer {
+    position: relative;
+    z-index: 5;
+}
+
+#work-footer .tagline {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    max-width: 80%;
+}
+
+.gray-text {
+    color: #a1a1a1;
+}
+
+/* ===========
+   THUMBNAILS
+   =========== */
+
+#thumbnails a {
+    position: relative;
+    width: 100%;
+    display: block;
+    border: none;
+    overflow: hidden;
+    height: 240px;
+}
+
+#thumbnails a:hover {
+    border: none;
+}
+
+.thumbnail-image {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#thumbnails a:hover .thumbnail-image {
+    -ms-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+
+    -webkit-transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.thumbnail-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209,182,11,0.9);
+    z-index: 10;
+    opacity: 0;
+
+    -webkit-transition: opacity .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: opacity .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#thumbnails a:hover .thumbnail-label {
+    opacity: .99;
+}
+
+.thumbnail-label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;
+    font-size: 30px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* ===========
+   FOOTER
+   =========== */
+
+footer {
+    font-family: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif;
+    font-size: 16px;
+    color: #a9a9a9;
+    text-align: center;
+    margin: 40px 0;
+    font-style: italic;
+}
+
+footer a {
+    color: #a9a9a9;
+    margin: 0 10px;
+    border: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+footer a:hover {
+    color: #544379;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 640px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    #work-footer .tagline {
+        max-width: inherit;
+    }
+
+    #page-header .content {
+        padding: 0 30px;
+    }
+
+    .content-wrapper {
+        padding: 40px 30px 20px 30px;
+    }
+
+    .content-wrapper .col {
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper article .col {
+        margin-bottom: 40px;
+    }
+
+    #logo {
+        font-size: 40px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    #menu-button {
+        width: 28px;
+        height: 30px;
+        top: 22px;
+        right: -6px;
+        padding: 5px 6px;
+    }
+
+    #menu-button div {
+        height: 5px;
+        margin: 4px auto;
+    }
+
+    #menu-button.on .menu-bar-one {
+        -ms-transform: rotate(45deg) translate(5px, 5px);
+        -webkit-transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-button.on .menu-bar-three {
+        -ms-transform: rotate(-45deg) translate(7px, -8px);
+        -webkit-transform: rotate(-45deg) translate(7px, -8px);
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
+
+    #menu nav a {
+        font-size: 60px;
+    }
+
+    .tagline {
+        font-size: 30px;
+    }
+
+    .home-tagline {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*    .profile-photo {
+        text-align: right;
+    }*/
+}
+
+@media only screen and (min-width: 960px) {
+    #logo {
+        margin: 30px 0;
+    }
+
+    #menu-button {
+        top: 32px;
+    }
+
+    #page-header .content {
+        padding: 0 60px;
+    }
+
+    .content-wrapper {
+        padding: 80px 60px 40px 60px;
+    }
+
+    .content-wrapper .col {
+        margin-bottom: 40px;
+    }
+
+    .content-wrapper article .col {
+        margin-bottom: 80px;
+    }
+
+    .previous, .next {
+        width: 40px;
+        height: 50px;
+        position: fixed;
+        top: 50%;
+        margin-top: -50px;
+        text-align: center;
+        padding: 0;
+        border: none;
+    }
+
+    .previous span, .next span {
+        display: none;
+    }
+
+    .previous {
+        left: 2%;
+        margin-left: -5px;
+    }
+
+    .next {
+        right: 2%;
+        margin-right: -5px;
+    }
+
+    .previous *, .next * {
+        float: none;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
