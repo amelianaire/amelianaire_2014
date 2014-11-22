@@ -1,3 +1,22 @@
 markdown: redcarpet
 baseurl: /amelianaire_2014
-exclude: []
+exclude: ['README.md']
+
+google_analytics_id: UA-18026229-3
+
+collections:
+- work
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "work" # a collection in your site, in plural form
+    values:
+      layout: "work"

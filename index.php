@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Amelia Johnson</title>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/common/header.php"; ?>
+---
+layout: work
+title: Art Direction and Design
+---
 
 <div class="content-wrapper clearfix">
 
@@ -101,7 +94,3 @@
     </nav>
 
 </div>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/common/work-footer.php"; ?>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/common/footer.php"; ?>
