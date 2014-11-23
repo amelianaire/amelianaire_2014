@@ -1,5 +1,5 @@
 markdown: redcarpet
-baseurl: /amelianaire_2014
+baseurl: /
 exclude: ['README.md']
 
 google_analytics_id: UA-18026229-3
