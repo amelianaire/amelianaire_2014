@@ -7,15 +7,20 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ page.title }}</title>
-        <meta name="description" content="Visual designer with six years of experience crafting effective, polished solutions for web and print.">
+        <meta name="description" content="UX and Visual designer with six years of experience crafting effective, polished solutions for web.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        
         <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
         <link rel="stylesheet" href="{{site.baseurl}}/css/fonts.css">
         <link rel="stylesheet" href="{{site.baseurl}}/css/gridpak.css">
         <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+        
+        <!--FontAwesome-->
+        <script src="https://use.fontawesome.com/984a62f17b.js"></script>
+        
+        
         <script src="{{site.baseurl}}/js/vendor/modernizr-2.6.2.min.js"></script>
 
         <script src="//use.typekit.net/bxe3ppa.js"></script>
@@ -26,6 +31,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+<!--
         <div id="menu" class="modal">
             <nav>
                 <a href="{{site.baseurl}}/">Work</a>
@@ -33,20 +39,31 @@
                 <a href="mailto:hello@amelianaire.com">Contact</a>
             </nav>
         </div>
+-->
         
         <header id="page-header" class="clearfix">
             <div class="content">
                 <div class="row">
-                    <div class="col span_6">
+                    <div class="col span_3">
                         <h1 id="logo"><a href="{{site.baseurl}}/">Amelia Johnson</a></h1>
+                    </div>
+                    
 
-                        <div id="menu-button">
+                <div class="col span_3">
+                    <nav class="nav">
+                        <a href="{{site.baseurl}}/">Work</a>  
+                        <a href="{{site.baseurl}}/about/">About</a>
+                        <a href="mailto:hello@amelianaire.com"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
+                
+                    </nav>
+                </div>
+                        <!--<div id="menu-button">
                             <div class="menu-bar-one"></div>
                             <div class="menu-bar-two"></div>
                             <div class="menu-bar-three"></div>
                         </div>
+                        <-->
                     </div>
-                </div>
             </div>
         </header>
 
