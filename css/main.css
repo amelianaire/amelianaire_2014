@@ -111,6 +111,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 1em;
+    margin-bottom: 2.5rem;
 }
 
 h1.detail {
@@ -121,7 +122,7 @@ h1.detail {
 }
 
 h2.tagline {
-    font-size: 20px;
+    font-size: 36px;
     color: #444;
 }
 
@@ -143,10 +144,28 @@ h3 {
     color: #a1a1a1;
 }
 
+
+h4.resume {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+    padding: 0;
+}
+
+h5.resumedate {
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: .25rem;
+}
+
+
 p {
+   font-weight: 300;
+    line-height: 1.6;
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
+
 
 a {
     text-decoration: none;
@@ -167,6 +186,11 @@ img {
     display: block;
 }
 
+.summary {
+    font-size: 18px;
+    padding: 0 .65rem;
+}
+
 ul {
     list-style: none;
     margin-top: 0;
@@ -175,12 +199,14 @@ ul {
 }
 
 .content ul.bullets {
+    font-size: 16px;
+    font-weight: 300;
     list-style: disc outside none;
     margin-left: 20px;
     margin-bottom: 2.6rem;
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.4;
     
 }
 
@@ -201,13 +227,14 @@ body {
 
 .tagline {
     font-family: "leitura-news-1", "leitura-news-2", serif;
-    font-size: 46px !important;
+    font-size: 36px;
     font-style: italic;
     font-weight: 700;
     letter-spacing: 0;
     text-transform: none;
     line-height: 1.4;
 }
+
 
 #page-wrapper {
     margin: 0 2%;
@@ -220,7 +247,7 @@ body {
 .button {
     font-size: 16px;
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
     background-color: #f7db1f;
     color: #544379;
@@ -228,12 +255,13 @@ body {
     display: block;
     line-height: 50px;
     height: 50px;
-    padding: 0 20px;
+    padding: 0 30px;
     box-sizing: border-box;
     border-bottom-width: 0;
     -webkit-transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);    
     transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 
 .button:hover {
     color: #fff;
@@ -838,11 +866,14 @@ footer a:hover {
     line-height: 80px;
 }
     
+    
+    
     .nav {
     line-height: 4;
     text-align: right;
 }
     
+
 
     #menu-button {
         width: 28px;
@@ -879,6 +910,7 @@ footer a:hover {
 
     .home-tagline {
         max-width: 660px;
+        font-size: 40px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -918,6 +950,12 @@ footer a:hover {
     .content-wrapper article .col.less-space {
         margin-bottom: 40px;
     }
+    
+    .summary {
+    font-size: 20px;
+    
+    padding: 0 10rem;
+}
 
 /*    .previous, .next {
         width: 60px;
