@@ -117,8 +117,9 @@ h1 {
 h1.detail {
     font-size:34px;
     text-transform: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #999;
+    margin-bottom: 1.7rem;
 }
 
 h2.tagline {
@@ -131,8 +132,9 @@ h2 {
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: 0.6rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #544379;
 }
 
 h3 {
@@ -163,7 +165,7 @@ p {
    font-weight: 300;
     line-height: 1.6;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
 }
 
 
@@ -178,12 +180,30 @@ a:hover {
     border-bottom: 2px solid #544379;
 }
 
+.caption {
+    font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #999;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+}
+
 img {
     max-width: 100%;
     /*max-height: 800px;*/
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+img.shadow {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(140,140,140,1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(140,140,140,1);
+    box-shadow: 0px 0px 1px 0px rgba(140,140,140,1);
 }
 
 .summary {
@@ -199,10 +219,9 @@ ul {
 }
 
 .content ul.bullets {
-    font-size: 16px;
     font-weight: 300;
-    list-style: disc outside none;
-    margin-left: 20px;
+    list-style: square outside none;
+    margin-left: 18px;
     margin-bottom: 2.6rem;
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 20px;
@@ -233,6 +252,7 @@ body {
     letter-spacing: 0;
     text-transform: none;
     line-height: 1.4;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -242,6 +262,7 @@ body {
 
 .button-wrap {
     display: inline-block;
+    margin-top: .5rem;
 }
 
 .button {
@@ -940,15 +961,15 @@ footer a:hover {
     }
 
     .content-wrapper .col {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .content-wrapper article .col {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .content-wrapper article .col.less-space {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     
     .summary {
