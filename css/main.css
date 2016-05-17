@@ -237,7 +237,7 @@ img {
 }
 
 .profile-photo {
-    max-width: 70%;
+    max-width: 42%;
 }
 
 .margin-bottom {
@@ -376,7 +376,7 @@ h1#logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    line-height: 80px;
+    line-height: 46px;
     margin: 0;
     
 }
@@ -442,7 +442,11 @@ h1#logo {
     text-decoration: none;
     border: none;
     margin-left: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: .25rem;
+}
+
+.nav a.active {
+    border-bottom: 1px solid #333;
 }
 
 .nav a:first-child {
@@ -450,8 +454,8 @@ h1#logo {
 }
 
 .nav a:hover {
-    color: #333;
-    border-bottom: 1px solid #333;
+    color: #8a7ca8;
+   
 }
 
 .nav:not(.margin) {
@@ -905,6 +909,11 @@ footer a:hover {
     #page-header .content {
         padding: 0 30px;
     }
+    
+        .profile-photo {
+    max-width: 60%;
+}
+    
 
     .content-wrapper {
         padding: 40px 30px 20px 30px;
@@ -968,6 +977,16 @@ footer a:hover {
         text-align: left;
         
     }
+    
+        h1#logo {
+    font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 80px;
+}
 
     #menu-button {
         top: 32px;
@@ -1006,18 +1025,23 @@ footer a:hover {
     margin-bottom: 1.7rem;
 }   
     
+
     .nav a {
     font-size: 18px;
     text-decoration: none;
     border: none;
     margin-left: 2rem;
     padding-bottom: 2px;
-}
-
+}    
+    
+    
     .nav-space {
     margin-bottom: 0rem;
 }
     
+    .profile-photo {
+    max-width: 80%;
+}
     
     .summary {
     font-size: 20px;

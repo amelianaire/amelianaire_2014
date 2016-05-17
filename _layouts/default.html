@@ -43,12 +43,12 @@
 
                 <div class="col span_3 nav-space">
                     <nav class="nav">
-                        <a href="{{site.baseurl}}/">Work</a>  
-                        <a href="{{site.baseurl}}/about/">About</a>
+                        <a {% if page.url == '/' %} class="active"{% endif %} href="{{site.baseurl}}/">Work</a>  
+                        <a {% if page.url == '/about/' %} class="active"{% endif %} href="{{site.baseurl}}/about/">About</a>
                         <a href="mailto:hello@amelianaire.com"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
-                
                     </nav>
                 </div>
+                   
                         <!--<div id="menu-button">
                             <div class="menu-bar-one"></div>
                             <div class="menu-bar-two"></div>
