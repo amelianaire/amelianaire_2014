@@ -132,8 +132,9 @@ h1.resume {
 }
 
 h2.tagline {
-    font-size: 26px;
+    font-size: 30px;
     color: #444;
+    max-width: 100%;
 }
 
 
@@ -289,7 +290,7 @@ body {
 
 .tagline {
     font-family: "leitura-news-1", "leitura-news-2", serif;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     font-weight: 700;
     letter-spacing: 0;
@@ -325,6 +326,7 @@ body {
     border-bottom-width: 0;
     -webkit-transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);    
     transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow: hidden;
 }
 
 
@@ -686,11 +688,12 @@ h1#logo {
 
 #thumbnails a {
     position: relative;
-    width: 100%;
+    width: 80%;
     display: block;
     border: none;
     overflow: hidden;
     height: 240px;
+    margin: 0 auto;
 }
 
 #thumbnails a:hover {
@@ -698,6 +701,7 @@ h1#logo {
 }
 
 .thumbnail-image {
+    align: center;
     position: relative;
     z-index: 0;
     width: 100%;
@@ -966,6 +970,10 @@ footer a:hover {
         margin-right: auto;
     }
 
+    #thumbnails a {
+    width: 100%;
+}
+    
 /*    .profile-photo {
         text-align: right;
     }*/
@@ -1077,6 +1085,11 @@ footer a:hover {
     line-height: 1.4;
     margin-bottom: 1.5rem;
     }
+    
+    #thumbnails a {
+    width: 100%;
+}
+    
 
 
   
