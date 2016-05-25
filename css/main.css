@@ -48,7 +48,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 0em 0 4em 0;
+    margin: 0em 0 3em 0;
     padding: 0;
 }
 
@@ -116,6 +116,7 @@ h1 {
 
 h1.detail {
     font-size:26px;
+    line-height: 1.2;
     text-transform: none;
     letter-spacing: 1px;
     color: #999;
@@ -133,8 +134,10 @@ h1.resume {
 
 h2.tagline {
     font-size: 30px;
+    text-align: center;
     color: #444;
     max-width: 100%;
+    padding: 0 2rem;
 }
 
 
@@ -200,8 +203,9 @@ a {
 }
 
 a:hover {
+    color: #8a7ca8;
     text-decoration: none;
-    border-bottom: 2px solid #544379;
+    border-bottom: 2px solid #8a7ca8;
 }
 
 .caption {
@@ -1020,7 +1024,11 @@ footer a:hover {
     margin-bottom: 1.7rem;
 }   
     
-
+    hr {
+    margin: 0em 0 4em 0;
+    padding: 0;
+}
+    
     .nav a {
     font-size: 18px;
     text-decoration: none;
