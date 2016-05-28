@@ -132,15 +132,6 @@ h1.resume {
     margin-top:8px;
 }
 
-h2.tagline {
-    font-size: 30px;
-    text-align: center;
-    color: #444;
-    max-width: 100%;
-    padding: 0 2rem;
-}
-
-
 h2 {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
@@ -150,6 +141,15 @@ h2 {
     margin-bottom: 0.5rem;
     color: #544379;
 }
+
+h2.tagline {
+    font-size: 30px;
+    text-align: center;
+    color: #444;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
 
 h3 {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
@@ -173,7 +173,7 @@ h5.resumedate {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
 }
 
 .resume-box {
@@ -922,6 +922,11 @@ footer a:hover {
         margin-bottom: 40px;
     }
 
+    h2.tagline {
+    font-size: 30px;
+    text-align: right;
+    }
+    
     #logo {
         font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
         font-weight: 400;
@@ -1067,6 +1072,7 @@ footer a:hover {
     h2.tagline {
     font-size: 36px;
     color: #444;
+    text-align: right;
     }
     
     
