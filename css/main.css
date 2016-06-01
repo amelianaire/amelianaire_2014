@@ -149,6 +149,10 @@ h2.tagline {
     padding: 0 .6rem;
 }
 
+.about-tagline {
+        text-align: center;
+    }
+
 h3 {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
@@ -965,6 +969,10 @@ footer a:hover {
         font-size: 40px;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .about-tagline {
+        text-align: right;
     }
 
     #thumbnails a {
