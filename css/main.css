@@ -261,7 +261,7 @@ ul {
     list-style: none;
     margin-top: 0;
     padding-left: 0;
-    
+
 }
 
 .content ul.bullets {
@@ -272,7 +272,7 @@ ul {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 20px;
     line-height: 1.4;
-    
+
 }
 
 .content ul.bullets li {
@@ -320,10 +320,10 @@ body {
     padding: 0 30px;
     box-sizing: border-box;
     border: none;
-    -webkit-transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);    
+    -webkit-transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
     overflow: hidden;
-    
+
     display: inline-block;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -332,7 +332,7 @@ body {
 
 .button:hover {
     color: #fff;
-    background-color: #544379; 
+    background-color: #544379;
     border: none;
 }
 
@@ -369,7 +369,7 @@ h1#logo {
     text-align: center;
     line-height: 46px;
     margin: 0;
-    
+
 }
 
 .home-tagline {
@@ -450,7 +450,7 @@ h1#logo {
 
 .nav a:hover {
     color: #8a7ca8;
-   
+
 }
 
 .nav:not(.margin) {
@@ -572,9 +572,9 @@ h1#logo {
     background-color: #fff;
 }
 
-.content-wrapper.teal h1, 
-.content-wrapper.teal h2, 
-.content-wrapper.teal h3, 
+.content-wrapper.teal h1,
+.content-wrapper.teal h2,
+.content-wrapper.teal h3,
 .content-wrapper.teal h4 {
     color: #fff;
 }
@@ -611,7 +611,7 @@ h1#logo {
 
 .previous, .next {
     display: block;
-    height: 70px; 
+    height: 70px;
     background-color: #fff;
     box-sizing: border-box;
     text-align: center;
@@ -722,7 +722,7 @@ h1#logo {
     width: 100%;
     height: 100%;
     background-color:
-    rgba(84,67,121,0.92);      
+    rgba(84,67,121,0.92);
     z-index: 10;
     opacity: 0;
 
@@ -906,11 +906,11 @@ footer a:hover {
     #page-header .content {
         padding: 0 30px;
     }
-    
+
         .profile-photo {
     max-width: 60%;
 }
-    
+
 
     .content-wrapper {
         padding: 40px 30px 20px 30px;
@@ -927,7 +927,7 @@ footer a:hover {
     h2.tagline {
     font-size: 30px;
     }
-    
+
     #logo {
         font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
         font-weight: 400;
@@ -938,9 +938,9 @@ footer a:hover {
         margin-top:1rem;
         margin: 0;
         line-height: 4;
-        
+
     }
-    
+
     h1#logo {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 24px;
@@ -950,7 +950,7 @@ footer a:hover {
     text-align: left;
     line-height: 80px;
 }
-  
+
     .nav {
     line-height: 4;
     text-align: right;
@@ -961,7 +961,6 @@ footer a:hover {
     }
 
     .home-tagline {
-        text-align: right;
         max-width: 660px;
         font-size: 40px;
         margin-left: auto;
@@ -971,7 +970,7 @@ footer a:hover {
     #thumbnails a {
     width: 100%;
 }
-    
+
 /*    .profile-photo {
         text-align: right;
     }*/
@@ -981,9 +980,9 @@ footer a:hover {
     #logo {
         margin: 30px 0;
         text-align: left;
-        
+
     }
-    
+
         h1#logo {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 24px;
@@ -1017,66 +1016,66 @@ footer a:hover {
     .content-wrapper article .col.less-space {
         margin-bottom: 30px;
     }
-    
+
     .experience {
     padding-left: 0px;
     padding-right: 6rem;
 }
-    
+
     h1.detail {
     font-size:34px;
     text-transform: none;
     letter-spacing: 1px;
     color: #999;
     margin-bottom: 1.7rem;
-}   
-    
+}
+
     hr {
     margin: 0em 0 4em 0;
     padding: 0;
 }
-    
+
     .nav a {
     font-size: 18px;
     text-decoration: none;
     border: none;
     margin-left: 2rem;
     padding-bottom: 2px;
-}    
-    
-    
+}
+
+
     .nav-space {
     margin-bottom: 0rem;
 }
-    
+
     .profile-photo {
     max-width: 80%;
 }
-    
+
     .summary {
     font-size: 20px;
     padding-left: 12rem;
     padding-right: 12rem;
 }
-    
+
     .summary-left {
     font-size: 20px;
     }
-    
+
     .summary-right {
     font-size: 20px;
     margin-top: .5rem;
     padding-left: 2rem;
-    padding-right: 6rem; 
+    padding-right: 6rem;
     padding-bottom: 2rem;
     }
-    
+
     h2.tagline {
     font-size: 36px;
     color: #444;
     }
-    
-    
+
+
     .tagline {
     font-family: "leitura-news-1", "leitura-news-2", serif;
     font-size: 36px;
@@ -1087,15 +1086,15 @@ footer a:hover {
     line-height: 1.4;
     margin-bottom: 1.5rem;
     }
-    
+
     #thumbnails a {
     width: 100%;
 }
-    
 
 
-  
-    
+
+
+
 /*    .previous, .next {
         width: 60px;
         height: 50px;
