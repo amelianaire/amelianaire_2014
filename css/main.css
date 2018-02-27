@@ -713,19 +713,22 @@ h1#logo {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 
     -webkit-transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #thumbnails a:hover .thumbnail-image {
-    -ms-transform: scale(1.05,1.05);
-    -webkit-transform: scale(1.05,1.05);
-    transform: scale(1.05,1.05);
+    -ms-transform: scale(1.02,1.02);
+    -webkit-transform: scale(1.02,1.02);
+    transform: scale(1.02,1.02);
 
-    -webkit-transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+    -webkit-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            }
+
 
 .thumbnail-label {
     position: absolute;
@@ -747,10 +750,10 @@ h1#logo {
 }
 
 #thumbnails a:hover .thumbnail-label {
-    color: #fff;
     background-color: rgb(84,67,121);
     -webkit-transition: all .25s cubic-bezier(0.42, 0, 0.58, 1);
     transition: all .25s cubic-bezier(0.42, 0, 0.58, 1);
+
 }
 
 #thumbnails a:hover .thumbnail-label span {
