@@ -119,7 +119,7 @@ h1.detail {
     line-height: 1.2;
     text-transform: none;
     letter-spacing: 1px;
-    color: #999;
+    color: #444;
     margin-top: 1rem;
     margin-bottom: 1.7rem;
 }
@@ -128,17 +128,17 @@ h1.resume {
     font-size:34px;
     text-transform: none;
     letter-spacing: 1px;
-    color: #999;
+    color: #444;
     margin-top:8px;
 }
 
 h2 {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     color: #544379;
 }
 
@@ -156,14 +156,16 @@ h3 {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 400;
-    color: #a1a1a1;
+    color: #444;
 }
 
 
 h4.resume {
     font-weight: 500;
-    margin-bottom: .1rem;
+    margin-bottom: .4rem;
     padding: 0;
+    line-height: 1.25;
+    letter-spacing: .5px;
 }
 
 h5.resumedate {
@@ -177,8 +179,8 @@ h5.resumedate {
 
 .resume-box {
     border: solid #ccc;
-    border-width: 4px 0px 0px 0px;
-    padding-top: 4rem;
+    border-width: 1px 0px 0px 0px;
+    padding-top: 8rem;
     clear: both;
 }
 
@@ -211,7 +213,7 @@ a:hover {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: #999;
+    color: #444;
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-style: italic;
@@ -223,7 +225,7 @@ a:hover {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: #999;
+    color: #444;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-style: italic;
@@ -235,7 +237,7 @@ a:hover {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: #999;
+    color: #444;
     font-style: italic;
     margin-top:none;
 }
@@ -279,7 +281,7 @@ ul {
     font-weight: 300;
     list-style: square outside none;
     margin-left: 18px;
-    margin-bottom: 2.6rem;
+    margin-bottom: 3.2rem;
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 20px;
     line-height: 1.4;
@@ -390,10 +392,27 @@ h1#logo {
 #logo a {
     border: none;
     color: #544379;
+    
 }
 
 #logo a:hover {
+
+    width: 100%;
+    height: 100%;
+    animation: pulse .7s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #544379;
+  }
+  50% {
     color: #e4cc2e;
+  }
+  100% {
+    color: #4AA5A5;
+  }
+    
 }
 
 .loading #loader {
@@ -627,8 +646,8 @@ h1#logo {
     box-sizing: border-box;
     text-align: center;
     border-bottom: none;
-    fill: #e4cc2e;
-    color: #e4cc2e;
+    fill: #544379;
+    color: #544379;
     width: 50%;
     padding: 10px 15px;
 }
@@ -649,8 +668,8 @@ h1#logo {
 
 .previous:hover, .next:hover {
     border-bottom: none;
-    fill: #544379;
-    color: #544379;
+    fill: #8a7ca8;
+    color: #8a7ca8;
 }
 
 .previous * {
@@ -683,7 +702,7 @@ h1#logo {
 
 
 .gray-text {
-    color: #a1a1a1;
+    color: #444;
 }
 
 /* ===========
@@ -789,14 +808,14 @@ h1#logo {
 footer {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
-    color: #a9a9a9;
+    color: #444;
     text-align: center;
     margin: 40px 0;
     font-style: italic;
 }
 
 footer a {
-    color: #a9a9a9;
+    color: #444;
     margin: 0 10px;
     border: none;
     text-transform: uppercase;
@@ -1053,7 +1072,7 @@ footer a:hover {
     font-size:34px;
     text-transform: none;
     letter-spacing: 1px;
-    color: #999;
+    color: #444;
     margin-bottom: 2.5rem;
 }
 
@@ -1094,7 +1113,7 @@ footer a:hover {
     margin-top: .5rem;
     padding-left: 2rem;
     padding-right: 6rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
     }
 
     h2.tagline {
@@ -1105,7 +1124,7 @@ footer a:hover {
 
     .tagline {
     font-family: "leitura-news-1", "leitura-news-2", serif;
-    font-size: 36px;
+    font-size: 48px;
     font-style: italic;
     font-weight: 700;
     letter-spacing: 0;
