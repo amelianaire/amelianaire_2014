@@ -97,11 +97,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+:root {
+    --normal-text-color: #444;
+    --link-color: #544379;
+    --hover-link-color: #8a7ca8;
+    --accent-color: #f7db1f;
+    --teal: #4AA5A5;
+    --content-bg: #f1f1f1;
+    --white: #fff;
+    --line-color: #ccc;
+}
+
 h1, h2, h3, h4 {
     margin-top: 0;
     margin-bottom: 0.6em;
     font-weight: 400;
-    color: #444;
+    color: var(--normal-text-color);
 }
 
 h1 {
@@ -119,7 +130,7 @@ h1.detail {
     line-height: 1.2;
     text-transform: none;
     letter-spacing: 1px;
-    color: #444;
+    color: var(--normal-text-color);
     margin-top: 1rem;
     margin-bottom: 1.7rem;
 }
@@ -128,7 +139,7 @@ h1.resume {
     font-size:34px;
     text-transform: none;
     letter-spacing: 1px;
-    color: #444;
+    color: var(--normal-text-color);
     margin-top:8px;
 }
 
@@ -139,13 +150,13 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: .5rem;
-    color: #544379;
+    color: var(--link-color);
 }
 
 
 h2.tagline {
     font-size: 30px;
-    color: #444;
+    color: var(--normal-text-color);
     max-width: 100%;
     padding: 0 .6rem;
 }
@@ -156,7 +167,7 @@ h3 {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 400;
-    color: #444;
+    color: var(--normal-text-color);
 }
 
 
@@ -178,7 +189,7 @@ h5.resumedate {
 }
 
 .resume-box {
-    border: solid #ccc;
+    border: solid var(--line-color);
     border-width: 1px 0px 0px 0px;
     padding-top: 8rem;
     clear: both;
@@ -199,21 +210,21 @@ p {
 
 a {
     text-decoration: none;
-    color: #544379;
-    border-bottom: 2px solid #544379;
+    color: var(--link-color);
+    border-bottom: 2px solid var(--link-color);
 }
 
 a:hover {
-    color: #8a7ca8;
+    color: var(--hover-link-color);
     text-decoration: none;
-    border-bottom: 2px solid #8a7ca8;
+    border-bottom: 2px solid var(--hover-link-color);
 }
 
 .caption {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: #444;
+    color: var(--normal-text-color);
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-style: italic;
@@ -225,7 +236,7 @@ a:hover {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: #444;
+    color: var(--normal-text-color);
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-style: italic;
@@ -237,7 +248,7 @@ a:hover {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: #444;
+    color: var(--normal-text-color);
     font-style: italic;
     margin-top:none;
 }
@@ -295,8 +306,8 @@ ul {
 body {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-weight: 400;
-    background-color: #fff;
-    color: #444;
+    background-color: var(--white);
+    color: var(--normal-text-color);
     text-rendering: optimizeLegibility;
     position: relative;
     font-size: 20px;
@@ -324,8 +335,8 @@ body {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
-    background-color: #f7db1f;
-    color: #544379;
+    background-color: var(--accent-color);
+    color: var(--link-color);
     text-transform: uppercase;
     display: block;
     line-height: 50px;
@@ -344,8 +355,8 @@ body {
 
 
 .button:hover {
-    color: #fff;
-    background-color: #544379;
+    color: var(--white);
+    background-color: var(--link-color);
     border: none;
 }
 
@@ -391,7 +402,7 @@ h1#logo {
 
 #logo a {
     border: none;
-    color: #544379;
+    color: var(--link-color);
     
 }
 
@@ -404,13 +415,13 @@ h1#logo {
 
 @keyframes pulse {
   0% {
-    color: #544379;
+    color: var(--link-color);
   }
   50% {
-    color: #e4cc2e;
+    color: var(--accent-color);
   }
   100% {
-    color: #4AA5A5;
+    color: var(--teal);
   }
     
 }
@@ -451,7 +462,7 @@ h1#logo {
     text-transform: uppercase;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
-    color: #544379;
+    color: var(--link-color);
     color: #fff;
     font-weight: 400;
     padding: 0.25em 0;
@@ -471,7 +482,7 @@ h1#logo {
 }
 
 .nav a.active {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--normal-text-color);
 }
 
 .nav a:first-child {
@@ -479,7 +490,7 @@ h1#logo {
 }
 
 .nav a:hover {
-    color: #8a7ca8;
+    color: var(--hover-link-color);
 
 }
 
@@ -496,7 +507,7 @@ h1#logo {
 }
 
 #menu nav a:hover {
-    color: #544379;
+    color: var(--link-color);
 }
 
 #menu-button-wrapper {
@@ -518,7 +529,7 @@ h1#logo {
 #menu-button div {
     width: 100%;
     height: 3px;
-    background: #544379;
+    background: var(--link-color);
     margin: 3px auto;
     backface-visibility: hidden;
     -webkit-transition: all 0.2s;
@@ -574,7 +585,7 @@ h1#logo {
    =========== */
 
 .content-wrapper {
-    background-color: #f1f1f1;
+    background-color: var(--content-bg);
     background-size: 27px 14px;
     background-repeat: no-repeat;
     background-position: center top;
@@ -595,18 +606,18 @@ h1#logo {
 }
 
 .content-wrapper.teal {
-    background-color: #4AA5A5;
+    background-color: var(--teal);
 }
 
 .content-wrapper.white {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .content-wrapper.teal h1,
 .content-wrapper.teal h2,
 .content-wrapper.teal h3,
 .content-wrapper.teal h4 {
-    color: #fff;
+    color: var(--white);
 }
 
 .content {
@@ -642,12 +653,12 @@ h1#logo {
 .previous, .next {
     display: block;
     height: 70px;
-    background-color: #fff;
+    background-color: var(--white);
     box-sizing: border-box;
     text-align: center;
     border-bottom: none;
-    fill: #544379;
-    color: #544379;
+    fill: var(--link-color);
+    color: var(--link-color);
     width: 50%;
     padding: 10px 15px;
 }
@@ -668,8 +679,8 @@ h1#logo {
 
 .previous:hover, .next:hover {
     border-bottom: none;
-    fill: #8a7ca8;
-    color: #8a7ca8;
+    fill: var(--hover-link-color);
+    color: var(--hover-link-color);
 }
 
 .previous * {
@@ -681,12 +692,12 @@ h1#logo {
 }
 
 .previous {
-    border-right: 1px solid #f1f1f1;
+    border-right: 1px solid var(--content-bg);
     float: left;
 }
 
 .next {
-    border-left: 1px solid #f1f1f1;
+    border-left: 1px solid var(--content-bg);
     float: right;
 }
 
@@ -702,7 +713,7 @@ h1#logo {
 
 
 .gray-text {
-    color: #444;
+    color: var(--normal-text-color);
 }
 
 /* ===========
@@ -756,7 +767,7 @@ h1#logo {
     width: 100%;
     height: 30%;
     background-color:
-    rgb(255,255,255);
+    var(--white);
     z-index: 10;
     opacity: 0;
 
@@ -769,14 +780,14 @@ h1#logo {
 }
 
 #thumbnails a:hover .thumbnail-label {
-    background-color: rgb(84,67,121);
+    background-color: var(--link-color);
     -webkit-transition: all .25s cubic-bezier(0.42, 0, 0.58, 1);
     transition: all .25s cubic-bezier(0.42, 0, 0.58, 1);
 
 }
 
 #thumbnails a:hover .thumbnail-label span {
-    color: #fff;
+    color: var(--white);
     -webkit-transition: all .25s cubic-bezier(0.42, 0, 0.58, 1);
     transition: all .25s cubic-bezier(0.42, 0, 0.58, 1);
 }
@@ -788,7 +799,7 @@ h1#logo {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: rgb(84,67,121);
+    color: var(--link-color);
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 30px;
     line-height: 1.2em;
@@ -808,14 +819,14 @@ h1#logo {
 footer {
     font-family: "canada-type-gibson-1", "canada-type-gibson-2", sans-serif;
     font-size: 16px;
-    color: #444;
+    color: var(--normal-text-color);
     text-align: center;
     margin: 40px 0;
     font-style: italic;
 }
 
 footer a {
-    color: #444;
+    color: var(--normal-text-color);
     margin: 0 10px;
     border: none;
     text-transform: uppercase;
@@ -825,7 +836,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #544379;
+    color: var(--link-color);
 }
 
 
@@ -936,6 +947,7 @@ footer a:hover {
    Modify as content requires.
    ========================================================================== */
 
+/* Tablet */
 @media only screen and (min-width: 640px) {
     h1 {
         font-size: 56px;
@@ -1022,6 +1034,7 @@ footer a:hover {
     }*/
 }
 
+/* Desktop */
 @media only screen and (min-width: 960px) {
     #logo {
         margin: 30px 0;
@@ -1072,7 +1085,7 @@ footer a:hover {
     font-size:34px;
     text-transform: none;
     letter-spacing: 1px;
-    color: #444;
+    color: var(--normal-text-color);
     margin-bottom: 2.5rem;
 }
 
@@ -1118,7 +1131,7 @@ footer a:hover {
 
     h2.tagline {
     font-size: 36px;
-    color: #444;
+    color: var(--normal-text-color);
     }
 
 
